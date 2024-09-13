@@ -6,6 +6,7 @@
         content="AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments">
   <meta name="keywords" content="AgentClinic, Medical LLMs, Agent Benchmark, Medical Agents">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -183,25 +184,27 @@
 </section>
 
 
-<section class="section">
+  <section class="section">
 
-  <h2 class="title is-3">LLM Benchmarking</h2>
-  <div class="column content">
+   <h2 class="title is-3">LLM Benchmarking</h2>
+   <div class="column content">
     <p>
       AgentClinic allows for easy benchmarking of new language models. Currently, any model on HuggingFace, OpenAI, or Replicate can be tested simply by passing the model string for any of the medical agents in AgentClinic (doctor, patient, moderator, measurement)!  Additionally, custom models not on HuggingFace, OpenAI, or Replicate are supported through custom wrappers.
     </p>
     <img src="./static/videos/PerformancePlots.png" alt="Bias Figure AgentClinic">
+    </div>
 
+    <div class="content">
+      <h2 class="title is-3">Incorporating Bias</h2>
+      <p>
+        AgentClinic allows for the perturbation of language agents via a set of 24 biases. Biases can be introduced to both the doctor and patient medical agents. Currently, 24 biases are supported and the source code for AgentClinic allows for simple integration of custom biases!
+      </p>
+      <img src="./static/videos/PrimaryBiasFigureMedAgents.png" alt="Bias Figure AgentClinic">
+      
   </div>
-  <div class="columns is-centered">
+   <div class="columns is-centered">
+
     
-  <div class="content">
-    <h2 class="title is-3">Incorporating Bias</h2>
-    <p>
-      AgentClinic allows for the perturbation of language agents via a set of 24 biases. Biases can be introduced to both the doctor and patient medical agents. Currently, 24 biases are supported and the source code for AgentClinic allows for simple integration of custom biases!
-    </p>
-    <img src="./static/videos/PrimaryBiasFigureMedAgents.png" alt="Bias Figure AgentClinic">
-        </section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -213,7 +216,7 @@
       eprint={2405.07960},
       archivePrefix={arXiv},
       primaryClass={cs.HC}
-}</code></pre>
+  }</code></pre>
   </div>
 </section>
 
