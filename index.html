@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments">
-  <meta name="keywords" content="AgentClinic, Medical LLMs, Agent Benchmark, Medical Agents">
+        content="AgentClinic: a multimodal benchmark for tool-using clinical AI agents">
+  <meta name="keywords" content="AgentClinic, Medical LLMs, Agent Benchmark, Medical Agents, Clinical AI, npj Digital Medicine">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments</title>
+  <title>AgentClinic: a multimodal benchmark for tool-using clinical AI agents</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -52,7 +52,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a clxass="navbar-item" href="https://samuelschmidgall.github.io/">
+      <a class="navbar-item" href="https://samuelschmidgall.github.io/">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -74,51 +74,66 @@
 </nav>
 
 
+<!-- ==================== HERO: Title, Authors, Links ==================== -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments</h1>
+          <!-- Publication venue badge -->
+          <div style="margin-bottom: 1rem;">
+            <span class="tag is-medium is-link" style="background-color: #e30613; font-weight: bold; font-size: 0.95rem; letter-spacing: 0.02em;">
+              Published in npj Digital Medicine (2026)
+            </span>
+          </div>
+          <h1 class="title is-1 publication-title">AgentClinic: a multimodal benchmark for tool-using clinical AI agents</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://samuelschmidgall.github.io/">Samuel Schmidgall</a><sup>1,2</sup>,</span>
+              <a href="https://samuelschmidgall.github.io/">Samuel Schmidgall</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/rojin-ziaei-549725a5">Rojin Ziaei</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://carlwharris.github.io/">Carl Harris</a><sup>2</sup>,
+              <a href="https://carlwharris.github.io/">Carl Harris</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://profiles.stanford.edu/edreis">Eduardo Reis</a><sup>1,3</sup>,
+              <a href="https://jiwoongkim.com/">Ji Woong Kim</a><sup>4</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.hopkinsmedicine.org/profiles/details/jeffrey-jopling">Jeffrey Jopling</a><sup>2</sup>,
+              <a href="https://profiles.stanford.edu/edreis">Eduardo Pontes Reis</a><sup>5,6</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.michaelmoor.me/">Michael Moor</a><sup>1</sup>,
+              <a href="https://www.hopkinsmedicine.org/profiles/details/jeffrey-jopling">Jeffrey Jopling</a><sup>7</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.michaelmoor.me/">Michael Moor</a><sup>8</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Stanford University</span>
-            <span class="author-block"><sup>2</sup>Johns Hopkins University</span>
-            <span class="author-block"><sup>3</sup>Hospital Israelita Albert Einstein</span>
+            <span class="author-block"><sup>1</sup>Dept. of ECE, Johns Hopkins University</span>
+            <span class="author-block"><sup>2</sup>Dept. of CS, Johns Hopkins University</span>
+            <span class="author-block"><sup>3</sup>Dept. of BME, Johns Hopkins University</span>
+            <span class="author-block"><sup>4</sup>Dept. of CS, Stanford University</span>
+            <span class="author-block"><sup>5</sup>Dept. of Radiology, Stanford University</span>
+            <span class="author-block"><sup>6</sup>Hospital Israelita Albert Einstein</span>
+            <span class="author-block"><sup>7</sup>Dept. of Surgery, Johns Hopkins Hospital</span>
+            <span class="author-block"><sup>8</sup>Dept. of Biosystems Science and Engineering, ETH Zürich</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- Nature Article Link -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2405.07960"
+                <a href="https://www.nature.com/articles/s41746-026-02674-7"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (npj Digital Medicine)</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2405.07960"
+                <a href="https://arxiv.org/abs/2405.07960"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -144,29 +159,29 @@
   </div>
 </section>
 
+
+<!-- ==================== TEASER: Fig 1 — Main Architecture ==================== -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!--video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/mainfigure.png" type="picture">
-      </video-->
-      <img src="./static/videos/mainfigure.png" alt="Main Figure AgentClinic">
+      <img src="./static/images/Fig1.png" alt="AgentClinic architecture: simulation flow with doctor, patient, measurement, and moderator agents, agent tools, and an example clinical simulation">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">AgentClinic</span> turns static medical QA problems into agents in a clinical environment in order to present a more clinically relevant challenge for medical language models.
+        <strong>Figure 1.</strong> <span class="dnerf">AgentClinic</span> simulates clinical encounters with four interacting agents (doctor, patient, measurement, moderator) and equips the doctor agent with clinical tools. The right panel shows an example simulation where the doctor agent diagnoses cavernous sinus thrombosis through history-taking, scan requests, and multimodal data interpretation.
       </h2>
     </div>
   </div>
 </section>
 
+
+<!-- ==================== ABSTRACT ==================== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first open-source benchmark to evaluate LLMs in their ability to operate as agents in simulated clinical environments. Diagnosing and managing a patient is a complex, sequential decision making process that requires physicians to obtain information---such as which tests to perform---and to act upon it. Recent advances in artificial intelligence (AI) and large language models (LLMs) promise to profoundly impact clinical care. However, current evaluation schemes overrely on static medical question-answering benchmarks, falling short on interactive decision-making that is required in real-life clinical work. Here, we present AgentClinic: a multimodal benchmark to evaluate LLMs in their ability to operate as agents in simulated clinical environments. In our benchmark, the doctor agent must uncover the patient's diagnosis through dialogue and active data collection. We present two open benchmarks: a multimodal image and dialogue environment, AgentClinic-NEJM, and a dialogue-only environment, AgentClinic-MedQA. Agents in AgentClinic-MedQA are grounded in cases from the US Medical Licensing Exam~(USMLE) and AgentClinic-NEJM are grounded in multimodal  New England Journal of Medicine (NEJM) case challenges. We embed cognitive and implicit biases both in patient and doctor agents to emulate realistic interactions between biased agents. We find that introducing bias leads to large reductions in diagnostic accuracy of the doctor agents, as well as reduced compliance, confidence, and follow-up consultation willingness in patient agents. Evaluating a suite of state-of-the-art LLMs, we find that several models that excel in benchmarks like MedQA are performing poorly in AgentClinic-MedQA. We find that the LLM used in the patient agent is an important factor for performance in the AgentClinic benchmark. We show that both having limited interactions as well as too many interaction reduces diagnostic accuracy in doctor agents.
+            Evaluating large language models (LLM) in clinical scenarios is crucial to assessing their potential clinical utility. Existing benchmarks rely heavily on static question-answering, which does not accurately depict the complex, sequential nature of clinical decision-making. Here, we introduce AgentClinic, a multimodal agent benchmark for evaluating LLMs in simulated clinical environments that include patient interactions, multimodal data collection under incomplete information, and the usage of various tools, resulting in an in-depth evaluation across nine medical specialties and seven languages. We find that solving MedQA problems in the sequential decision-making format of AgentClinic is considerably more challenging, resulting in diagnostic accuracies that can drop to below a tenth of the original accuracy. Overall, we observe that agents sourced from Claude-3.5 outperform other LLM backbones in most settings. Nevertheless, we see stark differences in the LLMs' ability to make use of tools, such as experiential learning, adaptive retrieval, and reflection cycles. Strikingly, Llama-3 shows up to 92% relative improvements with the notebook tool that allows for writing and editing notes that persist across cases. To further scrutinize our clinical simulations, we leverage real-world electronic health records, perform a clinical reader study, perturb agents with biases, and explore patient-centric metrics that this interactive environment enables.
           </p>
         </div>
       </div>
@@ -175,46 +190,133 @@
 </section>
 
 
+<!-- ==================== Fig 2 — LLM Benchmarking Results ==================== -->
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Incorporating Bias</h2>
-          <p>
-            AgentClinic allows for the perturbation of language agents via a set of 24 biases. Biases can be introduced to both the doctor and patient medical agents. Currently, 24 biases are supported and the source code for AgentClinic allows for simple integration of custom biases!
-          </p>
-          <img src="./static/videos/PrimaryBiasFigureMedAgents.png" alt="Bias Figure AgentClinic">
-      
-        </div>
-      </div>
-      <div class="column">
+      <div class="column is-full-width">
         <h2 class="title is-3">LLM Benchmarking</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              AgentClinic allows for easy benchmarking of new language models. Currently, any model on HuggingFace, OpenAI, or Replicate can be tested simply by passing the model string for any of the medical agents in AgentClinic (doctor, patient, moderator, measurement)!  Additionally, custom models not on HuggingFace, OpenAI, or Replicate are supported through custom wrappers.
-            </p>
-            <img src="./static/videos/PerformancePlots.png" alt="Bias Figure AgentClinic">
-      
-          </div>
-
+        <div class="content has-text-justified">
+          <p>
+            AgentClinic enables comprehensive benchmarking of LLMs as clinical agents. We evaluate a suite of state-of-the-art models across three settings: AgentClinic-MedQA performance based on doctor LLM, patient LLM, and AgentClinic-MIMIC-IV with real-world electronic health records. Claude-3.5 Sonnet achieves the highest diagnostic accuracy across settings, while human physicians perform comparably. The choice of patient agent LLM is a significant factor: performance varies substantially depending on which model simulates the patient.
+          </p>
         </div>
+        <div class="has-text-centered">
+          <img src="./static/images/Fig2.png" alt="LLM benchmarking results across AgentClinic-MedQA (doctor and patient models) and AgentClinic-MIMIC-IV" style="max-width: 100%;">
+        </div>
+        <p class="has-text-centered" style="margin-top: 0.75rem; font-size: 0.95rem; color: #555;">
+          <strong>Figure 2.</strong> Diagnostic accuracy across AgentClinic-MedQA (varying doctor and patient LLMs) and AgentClinic-MIMIC-IV (real-world EHR). Claude-3.5 Sonnet leads in most settings; the patient agent LLM significantly impacts doctor performance.
+        </p>
       </div>
     </div>
+  </div>
+</section>
 
 
+<!-- ==================== Fig 3 — MedQA vs AgentClinic Comparison ==================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Static QA vs. Sequential Decision-Making</h2>
+        <div class="content has-text-justified">
+          <p>
+            A core finding of AgentClinic is that static medical QA benchmarks dramatically overestimate clinical competence. When the same MedQA problems are presented in AgentClinic's sequential decision-making format, diagnostic accuracies drop substantially across all models, in some cases to below a tenth of the original accuracy. This gap highlights the importance of evaluating clinical AI in interactive, agent-based settings rather than relying on multiple-choice benchmarks alone.
+          </p>
+        </div>
+        <div class="has-text-centered">
+          <img src="./static/images/Fig3.png" alt="Comparison of MedQA static accuracy vs AgentClinic-MedQA agentic accuracy" style="max-width: 85%;">
+        </div>
+        <p class="has-text-centered" style="margin-top: 0.75rem; font-size: 0.95rem; color: #555;">
+          <strong>Figure 3.</strong> Comparison of static MedQA accuracy (dashed) vs. AgentClinic-MedQA agentic accuracy (solid) across 11 LLMs. The sequential decision-making format reveals substantial performance drops for all models.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== Fig 4 — Bias Perturbation ==================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Cognitive and Implicit Bias Perturbation</h2>
+        <div class="content has-text-justified">
+          <p>
+            AgentClinic embeds 24 cognitive and implicit biases in both doctor and patient agents to study realistic clinical interactions. Introducing biases leads to large reductions in diagnostic accuracy for doctor agents and reduced compliance, confidence, and follow-up consultation willingness in patient agents. The radar charts reveal that implicit biases (e.g., racial, gender, socioeconomic) and cognitive biases (e.g., confirmation, recency, frequency) differentially impact performance across GPT-4 and Mixtral-8x7B.
+          </p>
+        </div>
+        <div class="has-text-centered">
+          <img src="./static/images/Fig4.png" alt="Bias perturbation results showing radar charts for doctor and patient biases, and bar charts for patient confidence, compliance, and consultation ratings" style="max-width: 90%;">
+        </div>
+        <p class="has-text-centered" style="margin-top: 0.75rem; font-size: 0.95rem; color: #555;">
+          <strong>Figure 4.</strong> Impact of cognitive and implicit biases on AgentClinic-MedQA. Top: radar charts of normalized accuracy under doctor biases (implicit and cognitive) and patient biases. Bottom: patient-centric metrics (confidence, compliance, consultation willingness) under each bias type.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== Fig 5 — Multilingual, Multi-Specialty, Tools ==================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Multilingual, Multi-Specialty, and Tool-Augmented Evaluation</h2>
+        <div class="content has-text-justified">
+          <p>
+            AgentClinic provides evaluation across <strong>seven languages</strong> (AgentClinic-Lang), <strong>nine medical specialties</strong> (AgentClinic-Spec), and <strong>five agent tools</strong> (including experiential learning, adaptive RAG, reflection cycles, and a persistent notebook). Claude-3.5 leads in most languages and specialties, while tool effectiveness varies dramatically by model. Strikingly, Llama-3 shows up to 92% relative improvement with the notebook tool that allows writing and editing notes that persist across cases.
+          </p>
+        </div>
+        <div class="has-text-centered">
+          <img src="./static/images/Fig5.png" alt="Three radar charts showing diagnostic accuracy by language, specialty, and agent tool across six LLMs" style="max-width: 100%;">
+        </div>
+        <p class="has-text-centered" style="margin-top: 0.75rem; font-size: 0.95rem; color: #555;">
+          <strong>Figure 5.</strong> Diagnostic accuracy across languages (left), medical specialties (center), and agent tools (right) for six LLMs. Claude-3.5 dominates most axes; tool augmentation reveals stark model-dependent differences.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== Fig 6 — AgentClinic-NEJM Multimodal ==================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Multimodal Evaluation: AgentClinic-NEJM</h2>
+        <div class="content has-text-justified">
+          <p>
+            AgentClinic-NEJM evaluates LLMs on multimodal clinical cases from the New England Journal of Medicine case challenges, requiring agents to interpret medical images (radiology, pathology, dermatology) alongside dialogue. We compare performance at two stages: initial presentation and after measurement (imaging) data is provided. Claude-3.5 Sonnet again leads, but all models show notably lower accuracy on these challenging multimodal cases compared to text-only settings.
+          </p>
+        </div>
+        <div class="has-text-centered">
+          <img src="./static/images/Fig6.png" alt="AgentClinic-NEJM multimodal evaluation showing medical image interpretation and accuracy across LLMs" style="max-width: 85%;">
+        </div>
+        <p class="has-text-centered" style="margin-top: 0.75rem; font-size: 0.95rem; color: #555;">
+          <strong>Figure 6.</strong> AgentClinic-NEJM multimodal benchmark. Left: the doctor agent receives medical images (radiology, pathology) alongside patient context. Right: accuracy at initial presentation vs. after measurement data, comparing Claude-3.5, GPT-4, GPT-4o, and GPT-4o-mini.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== BibTeX ==================== -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{schmidgall2024agentclinic,
-      title={AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments}, 
-      author={Samuel Schmidgall and Rojin Ziaei and Carl Harris and Eduardo Reis and Jeffrey Jopling and Michael Moor},
-      year={2024},
-      eprint={2405.07960},
-      archivePrefix={arXiv},
-      primaryClass={cs.HC}
+    <pre><code>@article{schmidgall2026agentclinic,
+  title={AgentClinic: a multimodal benchmark for tool-using clinical AI agents},
+  author={Schmidgall, Samuel and Ziaei, Rojin and Harris, Carl and Kim, Ji Woong and Reis, Eduardo Pontes and Jopling, Jeffrey and Moor, Michael},
+  journal={npj Digital Medicine},
+  year={2026},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41746-026-02674-7},
+  url={https://www.nature.com/articles/s41746-026-02674-7}
 }</code></pre>
   </div>
 </section>
